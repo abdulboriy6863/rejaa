@@ -66,3 +66,23 @@ async function run() {
 run();
 
 console.log("hello");
+
+///////
+console.log("===== PRACTICE =====");
+
+// DEFINE
+function qoldiqliBolish(i, b, callback) {
+  if (b === 0) {
+    callback("Mahraj nolga teng emashhh", false);
+  } else {
+    callback(false, i % b);
+  }
+}
+
+// CALL
+qoldiqliBolish(10, 0, (err, data) => {
+  if (err) console.log("Error:", err);
+  else {
+    console.log("data:", err, data);
+  }
+});
