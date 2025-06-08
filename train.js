@@ -12,8 +12,8 @@ function countDigits(a) {
   const result2 = a.split("");
   const last = result2.filter((i) => {
     //buni terneria operatori deydi
-    return i >= 0 ? i : null;
+    return i >= 1 ? i : null;
   });
   console.log(`${last.length} ta raqam bor`);
 }
-countDigits("jsjkss088mnxnsm");
+countDigits("jsjkss088mn89nsm");
