@@ -40,3 +40,31 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
       console.log("Iltimos qaytatdan harakat qilin");
     });
 });
+
+document.addEventListener("click", function (e) {
+  //delete opertaion
+  console.log(e.target);
+  if (e.target.classList.contains("delete-me")) {
+    if (confirm("Aniq o'chirmoqchimisi")) {
+      axios
+        .post("/delete-item", { id: e.target.getAttribute("data-id") })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          console.log("Iltimos qaytatdan harakat qilin");
+        });
+      //   alert("Yes deb javob berildi");
+      // } else {
+      //   alert("No deb javob berildi");
+      // }
+    }
+    // alert("Siz delete tugmasini bostingiz");
+  }
+
+  //edit operation
+  if (e.target.classList.contains("edit-me")) {
+    alert("Siz edit tugmasini bostingiz");
+  }
+});

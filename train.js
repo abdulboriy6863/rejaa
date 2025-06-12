@@ -55,8 +55,6 @@ class Shop {
       return (this.cola += count);
     } else if (name == "lagmon") {
       return (this.lagmon += count);
-    } else if (name === "" || name === "number") {
-      return "Bunday ovqat mavjud emas";
     }
   }
 }
@@ -64,7 +62,8 @@ class Shop {
 const MyShop = new Shop(5, 4, 6);
 
 MyShop.qoldiq();
-MyShop.sotish(4, "apple");
+MyShop.qabul(4, "apple");
 MyShop.qoldiq();
-MyShop.qabul(10, "hello");
+console.log("=============");
+MyShop.sotish(9, "apple");
 MyShop.qoldiq();
