@@ -19,51 +19,79 @@
 // countDigits("jsjkss088mn89nsm");
 //TASK C;
 
-const moment = require("moment");
+// const moment = require("moment");
 
-class Shop {
-  apple;
-  cola;
-  lagmon;
-  constructor(apple, cola, lagmon) {
-    this.apple = apple;
-    this.cola = cola;
-    this.lagmon = lagmon;
-  }
+// class Shop {
+//   apple;
+//   cola;
+//   lagmon;
+//   constructor(apple, cola, lagmon) {
+//     this.apple = apple;
+//     this.cola = cola;
+//     this.lagmon = lagmon;
+//   }
 
-  qoldiq() {
-    console.log(
-      `At current time ${moment().format("HH:ss")} there are ${
-        this.apple
-      } apple, ${this.cola} cola and ${this.lagmon} lagmon 
-      `
-    );
-  }
-  sotish(count, name) {
-    if (name == "apple") {
-      return (this.apple -= count);
-    } else if (name == "cola") {
-      return (this.cola -= count);
-    } else if (name == "lagmon") {
-      return (this.lagmon -= count);
-    }
-  }
-  qabul(count, name) {
-    if (name == "apple") {
-      return (this.apple += count);
-    } else if (name == "cola") {
-      return (this.cola += count);
-    } else if (name == "lagmon") {
-      return (this.lagmon += count);
-    }
-  }
-}
+//   qoldiq() {
+//     console.log(
+//       `At current time ${moment().format("HH:ss")} there are ${
+//         this.apple
+//       } apple, ${this.cola} cola and ${this.lagmon} lagmon
+//       `
+//     );
+//   }
+//   sotish(count, name) {
+//     if (name == "apple") {
+//       return (this.apple -= count);
+//     } else if (name == "cola") {
+//       return (this.cola -= count);
+//     } else if (name == "lagmon") {
+//       return (this.lagmon -= count);
+//     }
+//   }
+//   qabul(count, name) {
+//     if (name == "apple") {
+//       return (this.apple += count);
+//     } else if (name == "cola") {
+//       return (this.cola += count);
+//     } else if (name == "lagmon") {
+//       return (this.lagmon += count);
+//     }
+//   }
+// }
 
-const MyShop = new Shop(5, 4, 6);
+// const MyShop = new Shop(5, 4, 6);
 
-MyShop.qoldiq();
-MyShop.qabul(4, "apple");
-MyShop.qoldiq();
-console.log("=============");
-MyShop.sotish(9, "apple");
-MyShop.qoldiq();
+// MyShop.qoldiq();
+// MyShop.qabul(4, "apple");
+// MyShop.qoldiq();
+// console.log("=============");
+// MyShop.sotish(9, "apple");
+// MyShop.qoldiq();
+
+//TASK D
+
+// function compareWords(a, b) {
+//   if (a.every("") === b.every("")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+const checkContent = (a, b) => {
+  if (
+    a.length === a.length &&
+    a.split("").sort().join() == b.split("").sort().join()
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// function cauntLetter(harf, soz) {
+//   const result = soz.split("");
+//   console.log(result);
+//   const last = result.filter((i) => i === harf);
+//   console.log(`${soz}ning ichida ${last.length} ta ${harf} bor`);
+
+console.log(checkContent("salom", "mloas"));
