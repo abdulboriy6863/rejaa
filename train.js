@@ -69,14 +69,6 @@
 // MyShop.qoldiq();
 
 //TASK D
-
-// function compareWords(a, b) {
-//   if (a.every("") === b.every("")) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
 const checkContent = (a, b) => {
   if (
     a.length === a.length &&
@@ -87,11 +79,4 @@ const checkContent = (a, b) => {
     return false;
   }
 };
-
-// function cauntLetter(harf, soz) {
-//   const result = soz.split("");
-//   console.log(result);
-//   const last = result.filter((i) => i === harf);
-//   console.log(`${soz}ning ichida ${last.length} ta ${harf} bor`);
-
 console.log(checkContent("salom", "mloas"));
