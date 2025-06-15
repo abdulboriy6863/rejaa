@@ -69,14 +69,23 @@
 // MyShop.qoldiq();
 
 //TASK D
-const checkContent = (a, b) => {
-  if (
-    a.length === a.length &&
-    a.split("").sort().join() == b.split("").sort().join()
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-};
-console.log(checkContent("salom", "mloas"));
+// const checkContent = (a, b) => {
+//   if (
+//     a.length === a.length &&
+//     a.split("").sort().join() == b.split("").sort().join()
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(checkContent("salom", "mloas"));
+
+//TASK E
+
+function getReverse(a) {
+  let result = a.split("").reverse().join("");
+  console.log(result);
+}
+
+getReverse("hello");
