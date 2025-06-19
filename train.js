@@ -82,10 +82,16 @@
 // console.log(checkContent("salom", "mloas"));
 
 //TASK E
+// function getReverse(a) {
+//   let result = a.split("").reverse().join("");
+//   console.log(result);
+// }
+// getReverse("hello");
 
-function getReverse(a) {
-  let result = a.split("").reverse().join("");
+//TASK F
+function findDoublers(a) {
+  const result = a.includes("ll");
   console.log(result);
 }
 
-getReverse("hello");
+findDoublers("helllo");
