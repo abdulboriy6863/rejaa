@@ -68,7 +68,7 @@
 // MyShop.sotish(9, "apple");
 // MyShop.qoldiq();
 
-//TASK D
+// TASK D
 // const checkContent = (a, b) => {
 //   if (
 //     a.length === a.length &&
@@ -89,9 +89,34 @@
 // getReverse("hello");
 
 //TASK F
-function findDoublers(a) {
-  const result = a.includes("ll");
-  console.log(result);
-}
+// function findDoublers(a) {
+//   const result = a.includes("oo");
+//   console.log(result);
+// }
 
-findDoublers("helllo");
+// findDoublers("heloo");
+
+// function getHighestIndex(a) {
+//   const result = a.map((eleEle, index) => {
+//     console.log(`${index}: ${eleEle}`);
+//     return eleEle > 1;
+//   });
+// }
+
+// const animals = [10, 50, 50, 87];
+
+// const a = Math.max(...animals);
+// const b = animals.indexOf(a);
+// const c = a + b;
+// console.log(c);
+
+//TASK G
+function getHighestIndex(a) {
+  // return Math.max(...a);
+  const maxValue = Math.max(...a);
+  const maxIndex = a.indexOf(maxValue);
+  console.log(
+    `Bu ${maxValue} soni arraynig tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi ${maxIndex} qaytadi`
+  );
+}
+getHighestIndex([40, 24, 125]);
